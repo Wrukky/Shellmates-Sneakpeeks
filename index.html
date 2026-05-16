@@ -526,37 +526,33 @@
     })();
 
     let images = [
-  "images/sh1.jpg",
-  "images/sh2.jpg",
-  "images/sh3.jpg",
-  "images/sh4.jpg",
-  "images/sh5.jpg",
-  "images/sh6.jpg",
-  "images/sh7.jpg",
-  "images/sh8.jpg",
-  "images/sh9.jpg",
-  "images/sh10.jpg",
-  "images/sh11.jpg",
-  "images/sh12.jpg",
-  "images/sh13.jpg",
-  "images/sh14.jpg",
-  "images/sh15.jpg",
-  "images/sh16.jpg",
-  "images/sh17.jpg",
-  "images/sh18.jpg",
-  "images/sh19.jpg",
-  "images/sh20.jpg",
-  "images/sh21.jpg",
-  "images/sh22.jpg",
-  "images/sh23.jpg",
-  "images/sh24.jpg",
-  "images/sh25.jpg",
-  "images/sh26.jpg"
-].map((url, i) => ({
-  url,
-  name: `sh${i + 1}.jpg`,
-  size: 0
-}));
+  { url: "sh1.jpg",  name: "sh1.jpg"  },
+  { url: "sh2.jpg",  name: "sh2.jpg"  },
+  { url: "sh3.jpg",  name: "sh3.jpg"  },
+  { url: "sh4.png",  name: "sh4.png"  },
+  { url: "sh5.png",  name: "sh5.png"  },
+  { url: "sh6.jpg",  name: "sh6.jpg"  },
+  { url: "sh7.jpg",  name: "sh7.jpg"  },
+  { url: "sh8.jpg",  name: "sh8.jpg"  },
+  { url: "sh9.jpg",  name: "sh9.jpg"  },
+  { url: "sh10.jpg", name: "sh10.jpg" },
+  { url: "sh11.jpg", name: "sh11.jpg" },
+  { url: "sh12.jpg", name: "sh12.jpg" },
+  { url: "sh13.jpg", name: "sh13.jpg" },
+  { url: "sh14.jpg", name: "sh14.jpg" },
+  { url: "sh15.jpg", name: "sh15.jpg" },
+  { url: "sh16.jpg", name: "sh16.jpg" },
+  { url: "sh17.jpg", name: "sh17.jpg" },
+  { url: "sh18.jpg", name: "sh18.jpg" },
+  { url: "sh19.jpg", name: "sh19.jpg" },
+  { url: "sh20.jpg", name: "sh20.jpg" },
+  { url: "sh21.jpg", name: "sh21.jpg" },
+  { url: "sh22.jpg", name: "sh22.jpg" },
+  { url: "sh23.jpg", name: "sh23.jpg" },
+  { url: "sh24.jpg", name: "sh24.jpg" },
+  { url: "sh25.jpg", name: "sh25.jpg" },
+  { url: "sh26.jpg", name: "sh26.jpg" }
+].map(img => ({ ...img, size: 0 }));
 
 let lbIndex = 0;
 
