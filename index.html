@@ -561,7 +561,7 @@
 let lbIndex = 0;
 
     const gallery      = document.getElementById('gallery');
-    const fileInput    = document.getElementById('fileInput');
+    
     const dropZone     = document.getElementById('dropZone');
     const clearBtn     = document.getElementById('clearBtn');
     const galleryLabel = document.getElementById('galleryLabel');
@@ -576,11 +576,11 @@ let lbIndex = 0;
     dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag-over'); });
     dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
     dropZone.addEventListener('drop', e => { e.preventDefault(); dropZone.classList.remove('drag-over'); handleFiles(e.dataTransfer.files); });
-    fileInput.addEventListener('change', e => { handleFiles(e.target.files); fileInput.value = ''; });
+    
 
     function handleFiles(files) {
       Array.from(files).filter(f => f.type.startsWith('image/')).forEach(f => {
-        images.push({ url: URL.createObjectURL(f), name: f.name, size: f.size });
+        images.push({ url: (f), name: f.name, size: f.size });
       });
       render();
     }
