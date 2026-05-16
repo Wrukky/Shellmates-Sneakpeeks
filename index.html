@@ -525,7 +525,40 @@
       }
     })();
 
-    let images = [], lbIndex = 0;
+    let images = [
+  "images/sh1.jpg",
+  "images/sh2.jpg",
+  "images/sh3.jpg",
+  "images/sh4.jpg",
+  "images/sh5.jpg",
+  "images/sh6.jpg",
+  "images/sh7.jpg",
+  "images/sh8.jpg",
+  "images/sh9.jpg",
+  "images/sh10.jpg",
+  "images/sh11.jpg",
+  "images/sh12.jpg",
+  "images/sh13.jpg",
+  "images/sh14.jpg",
+  "images/sh15.jpg",
+  "images/sh16.jpg",
+  "images/sh17.jpg",
+  "images/sh18.jpg",
+  "images/sh19.jpg",
+  "images/sh20.jpg",
+  "images/sh21.jpg",
+  "images/sh22.jpg",
+  "images/sh23.jpg",
+  "images/sh24.jpg",
+  "images/sh25.jpg",
+  "images/sh26.jpg"
+].map((url, i) => ({
+  url,
+  name: `sh${i + 1}.jpg`,
+  size: 0
+}));
+
+let lbIndex = 0;
 
     const gallery      = document.getElementById('gallery');
     const fileInput    = document.getElementById('fileInput');
